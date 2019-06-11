@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["clarkmu@gmail.com"]
 
   spec.summary       = %q{Run Muscle from Ruby gem}
-  spec.description   = %q{Multiple Sequence Alignment for Ruby scripts.  Muscle found at https://www.ebi.ac.uk/Tools/msa/muscle/}
+  spec.description   = %q{Multiple Sequence Alignment for Ruby scripts.  Muscle found at https://www.ebi.ac.uk/Tools/msa/muscle/.  For instructions on how to use, see https://github.com/clarkmu/muscle_bio}
   spec.homepage      = "http://swanstrom.web.unc.edu/"
   spec.license       = "MIT"
 

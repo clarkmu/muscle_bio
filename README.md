@@ -23,4 +23,10 @@ Or install it yourself as:
 require 'muscle_bio'
 
 MuscleBio.run('muscle -in ../sample/sequence.fasta -out ../sample/sequence.afa')
+
 #pass string in as your current Muscle command
+
+
+MuscleBio.init(fileIn, fileOut, maxIters)
+
+#maxIters is optional

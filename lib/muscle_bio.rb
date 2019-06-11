@@ -8,8 +8,16 @@ module MuscleBio
   	file = File.join( File.dirname(__FILE__), 'runnable/'+file)
   	cmd = cmd.sub 'sudo ', ''
   	cmd = cmd.sub 'muscle', file
-  	cmd = 'sudo ' + cmd
+  	cmd = 'sudo ' + cmd + " -quiet"
 	`#{cmd}`
+  end
+
+  def self.init(fileIn, fileOut, maxIters = nil)
+  	cmd = "muscle -in " + fileIn + " -out " + fileOut
+  	if maxIters != nil
+  		cmd += " -maxiters " + maxIters
+  	end
+  	self.run(cmd)
   end
 
 end
