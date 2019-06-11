@@ -1,5 +1,7 @@
 # MuscleBio
 
+Supported on Mac, Linux, and Windows.
+
 ## Installation
 
 Add this line to your application's Gemfile:
