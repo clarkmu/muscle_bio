@@ -9,9 +9,9 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Michael Clark"]
   spec.email         = ["clarkmu@gmail.com"]
 
-  spec.summary       = %q{}
-  spec.description   = %q{}
-  spec.homepage      = ""
+  spec.summary       = %q{Run Muscle from Ruby gem}
+  spec.description   = %q{Multiple Sequence Alignment for Ruby scripts.  Muscle found at https://www.ebi.ac.uk/Tools/msa/muscle/}
+  spec.homepage      = "http://swanstrom.web.unc.edu/"
   spec.license       = "MIT"
 
   # Specify which files should be added to the gem when it is released.
