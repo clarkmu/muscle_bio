@@ -24,6 +24,11 @@ require 'muscle_bio'
 
 MuscleBio.run('muscle -in ../sample/sequence.fasta -out ../sample/sequence.afa')
 
+
+MuscleBio.run(command, useSudo)
+command as seen above
+useSudo is a boolean to add 'sudo' to the beginning of the command
+
 #pass string in as your current Muscle command
 
 
