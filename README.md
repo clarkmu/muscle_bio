@@ -1,6 +1,6 @@
 # MuscleBio
 
-Supported on Mac, Linux, and Windows.
+Supported on Mac-Intel64, Mac-AMR64, Linux, and Windows. Support Muscle 5.1.
 
 ## Installation
 
@@ -20,18 +20,16 @@ Or install it yourself as:
 
 ## Usage
 
+```{ruby}
 require 'muscle_bio'
 
-MuscleBio.run('muscle -in ../sample/sequence.fasta -out ../sample/sequence.afa')
+MuscleBio.exec(
+               '/sample/sequence.fasta', # input file
+               '/sample/sequence.afa', # output file
+               :PPP # choose from :PPP or :Super5
+               )
+```
 
-
-MuscleBio.run(command, useSudo)
-command as seen above
-useSudo is a boolean to add 'sudo' to the beginning of the command
-
-#pass string in as your current Muscle command
-
-
-MuscleBio.init(fileIn, fileOut, maxIters)
-
-#maxIters is optional
+### Version history
+  * v0.5.0 - update Muscle to version 5.1.
+  * v0.4.0 - Muscle 3.8.1
