@@ -15,11 +15,13 @@ module MuscleBio
 	`#{cmd}`
   end
 
-  def self.init(fileIn, fileOut, maxIters = nil)
-  	cmd = "muscle -in " + fileIn + " -out " + fileOut
-  	if maxIters != nil
-  		cmd += " -maxiters " + maxIters
-  	end
+  ### two algorithms to choose, :PPP or Super5
+  def self.init(fileIn, fileOut, algorithm = :PPP)
+    if algorithm == :PPP
+      cmd = "muscle -align " + fileIn + " -output " + fileOut
+    elsif algorithm == :Super5
+      cmd = "muscle -super5 " + fileIn + " -output " + fileOut
+    end
   	self.run(cmd)
   end
 
